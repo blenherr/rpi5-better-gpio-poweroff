@@ -1,3 +1,6 @@
+#!/usr/bin/python
+"""Sets a GPIO pin LOW"""
+
 import RPi.GPIO as GPIO
 
 GPIO_PIN = 4

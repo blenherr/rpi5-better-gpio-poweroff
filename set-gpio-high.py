@@ -1,5 +1,5 @@
 #!/usr/bin/python
-"""Sets a GPIO pin HIGH"""
+"""Set a GPIO pin to HIGH"""
 
 import RPi.GPIO as GPIO
 

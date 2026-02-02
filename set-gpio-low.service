@@ -1,5 +1,5 @@
 [Unit]
-Description=Listens for reboot, poweroff or halt target and sets a GPIO pin LOW
+Description=Listens for reboot, poweroff or halt target and set a GPIO pin to LOW
 Before=reboot.target poweroff.target halt.target
 DefaultDependencies=no
 

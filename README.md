@@ -10,9 +10,9 @@
 
 
 # Information
-- Replaces `dtoverlay=gpio-poweroff` by two python scripts and two services
-- You can customize gpio pin
-- You can customize target services
+- Sets a gpio pin HIGH or LOW by given target service
+- Two python scripts and two service files
+- You can customize gpio pin and target services
 
 
 

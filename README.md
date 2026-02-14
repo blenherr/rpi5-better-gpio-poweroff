@@ -74,6 +74,11 @@ Copy python files
 sudo cp rpi-state-set-gpio-high.py /usr/bin/rpi-state-set-gpio-high.py && \
 sudo cp rpi-state-set-gpio-low.py /usr/bin/rpi-state-set-gpio-low.py
 ```
+Change python file permissions
+```
+sudo chmod 755 /usr/bin/rpi-state-set-gpio-high.py && \
+sudo chmod 755 /usr/bin/rpi-state-set-gpio-low.py
+```
 Copy service files
 ```
 sudo cp rpi-state-set-gpio-high.service /lib/systemd/system/rpi-state-set-gpio-high.service && \

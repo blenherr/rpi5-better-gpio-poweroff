@@ -77,8 +77,8 @@ sudo cp rpi-state-set-gpio-low.service /lib/systemd/system/rpi-state-set-gpio-lo
 ```
 Enable services
 ```
-sudo systemctl enable $FILENAME-high.service && \
-sudo systemctl enable $FILENAME-low.service
+sudo systemctl enable rpi-state-set-gpio-high.service && \
+sudo systemctl enable rpi-state-set-gpio-low.service
 ```
 Reload deamon
 ```
@@ -92,18 +92,18 @@ sudo systemctl daemon-reload
 # Manual remove
 Disable services
 ```
-sudo systemctl disable $FILENAME-high.service && \
-sudo systemctl disable $FILENAME-low.service
+sudo systemctl disable rpi-state-set-gpio-high.service && \
+sudo systemctl disable rpi-state-set-gpio-low.service
 ```
 Remove services
 ```
-sudo rm /lib/systemd/system/$FILENAME-high.service && \
-sudo rm /lib/systemd/system/$FILENAME-low.service
+sudo rm /lib/systemd/system/rpi-state-set-gpio-high.service && \
+sudo rm /lib/systemd/system/rpi-state-set-gpio-low.service
 ```
 Remove python scripts
 ```
-sudo rm /usr/bin/$FILENAME-high.py && \
-sudo rm /usr/bin/$FILENAME-low.py
+sudo rm /usr/bin/rpi-state-set-gpio-high.py && \
+sudo rm /usr/bin/rpi-state-set-gpio-low.py
 ```
 Reload deamon
 ```

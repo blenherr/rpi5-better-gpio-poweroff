@@ -11,7 +11,7 @@
 
 # Information
 - Sets a gpio pin HIGH or LOW by given target service
-- Two python scripts and two service files
+- Two minimal python scripts and two service files
 - You can customize gpio pin and target services
 
 

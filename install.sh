@@ -11,19 +11,19 @@ TEMP_DIR=$(mktemp -d)
 echo "Create $TEMP_DIR/$FILENAME-high.py"
 echo "#!/usr/bin/python" > $TEMP_DIR/$FILENAME-high.py
 echo "import RPi.GPIO as GPIO" >> $TEMP_DIR/$FILENAME-high.py
-echo "" >> $TEMP_DIR/$FILENAME-low.py
+echo "" >> $TEMP_DIR/$FILENAME-high.py
 echo "# Define pin" >> $TEMP_DIR/$FILENAME-high.py
 echo "GPIO_PIN = $GPIO_PIN" >> $TEMP_DIR/$FILENAME-high.py
-echo "" >> $TEMP_DIR/$FILENAME-low.py
+echo "" >> $TEMP_DIR/$FILENAME-high.py
 echo "# Setup pin" >> $TEMP_DIR/$FILENAME-high.py
 echo "GPIO.setmode(GPIO.BCM)" >> $TEMP_DIR/$FILENAME-high.py
 echo "GPIO.setup(GPIO_PIN, GPIO.OUT)" >> $TEMP_DIR/$FILENAME-high.py
-echo "" >> $TEMP_DIR/$FILENAME-low.py
+echo "" >> $TEMP_DIR/$FILENAME-high.py
 echo "# Set pin" >> $TEMP_DIR/$FILENAME-high.py
 echo "GPIO.output(GPIO_PIN, GPIO.HIGH)" >> $TEMP_DIR/$FILENAME-high.py
-# Create $TEMP_DIR/$FILENAME-high.py
+# Create $TEMP_DIR/$FILENAME-low.py
 echo "Create $TEMP_DIR/$FILENAME-low.py"
-echo "#!/usr/bin/python" > $TEMP_DIR/$FILENAME-high.py
+echo "#!/usr/bin/python" > $TEMP_DIR/$FILENAME-low.py
 echo "import RPi.GPIO as GPIO" >> $TEMP_DIR/$FILENAME-low.py
 echo "" >> $TEMP_DIR/$FILENAME-low.py
 echo "# Define pin" >> $TEMP_DIR/$FILENAME-low.py

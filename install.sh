@@ -21,6 +21,7 @@ echo "GPIO.setup(GPIO_PIN, GPIO.OUT)" >> $TEMP_DIR/$FILENAME-high.py
 echo "" >> $TEMP_DIR/$FILENAME-high.py
 echo "# Set pin" >> $TEMP_DIR/$FILENAME-high.py
 echo "GPIO.output(GPIO_PIN, GPIO.HIGH)" >> $TEMP_DIR/$FILENAME-high.py
+
 # Create $TEMP_DIR/$FILENAME-low.py
 echo "Create $TEMP_DIR/$FILENAME-low.py"
 echo "#!/usr/bin/python" > $TEMP_DIR/$FILENAME-low.py
